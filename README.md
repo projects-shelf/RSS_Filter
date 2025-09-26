@@ -10,6 +10,12 @@ cd RSS_Filter
 docker-compose up -d
 ```
 
+Once running, you can access a filtered RSS feed by visiting:
+
+```
+http://localhost:8080/?url=https://example.com/rss.xml
+```
+
 ## Features
 
 ### Filters out RSS feed items containing links to domains listed in blocklist.txt.
