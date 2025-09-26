@@ -1,0 +1,10 @@
+services:
+  go:
+    build:
+      context: ./back
+    container_name: shelf_rss_filter
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./blocklist.txt:/back/blocklist.txt:ro
+    restart: unless-stopped
